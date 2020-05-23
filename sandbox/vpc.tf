@@ -1,6 +1,6 @@
 resource "aws_vpc" "main" {
   cidr_block             = "${var.cidr}"
-  enable_dns_hostnames   = "false"
+  enable_dns_hostnames   = "true"
 
   tags = {
     Name            = "${var.environment}-${var.project}"
